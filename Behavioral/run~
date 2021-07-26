@@ -1,0 +1,6 @@
+
+vcs -debug +v2k \
+        ./MatrixMultiplier_tb.v \
+        ./MatrixMultiplier.v \
+           	
+simv -gui

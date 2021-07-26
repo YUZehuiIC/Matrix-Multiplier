@@ -1,0 +1,6 @@
+cp -i ../Synthesis/netlist/Syn_MatrixMultiplier.sdf ./
+cp -i ../Synthesis/netlist/Syn_MatrixMultiplier.v ./
+cp -i ../Behavioral/InputVector.txt ./
+source synopsys_linux_vJ-2014_cshrc
+vcs -debug +v2k ./MatrixMultiplier_tb.v ./Syn_MatrixMultiplier.v -f ./library.f
+simv -gui

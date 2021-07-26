@@ -1,0 +1,42 @@
+Chronologic VCS simulator copyright 1991-2014
+Contains Synopsys proprietary information.
+Compiler version I-2014.03-SP1; Runtime version I-2014.03-SP1;  Oct  7 12:09 2020
+Doing SDF annotation ...... Done
+VCD+ Writer I-2014.03-SP1 Copyright (c) 1991-2014 by Synopsys Inc.
+The file '/home1/msc30y20/Desktop/Module5/rtl/inter.vpd' was opened successfully.
+
+Warning-[VPD-WARN-VCD-OFF] Warning from $vcdplusoff.
+At time 940000, in PLI routine called from ./MatrixMultiplier_tb.v, 80
+  Stopping the recording of signal value changes for specified scopes or 
+  specified signals may cause unpredictable values on other dumped signals. 
+  Turn off dumping on the whole design to guarantee that the values changes 
+  being dumped are correct.
+
+$finish called from file "./MatrixMultiplier_tb.v", line 81.
+$finish at simulation time               940000
+Simulation complete, time is 940000 ps.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 940000 ps
+CPU Time:      0.150 seconds;       Data structure size:   0.1Mb
+Wed Oct  7 12:09:22 2020
+Chronologic VCS simulator copyright 1991-2014
+Contains Synopsys proprietary information.
+Compiler version I-2014.03-SP1; Runtime version I-2014.03-SP1;  Oct  7 12:12 2020
+Doing SDF annotation ...... Done
+VCD+ Writer I-2014.03-SP1 Copyright (c) 1991-2014 by Synopsys Inc.
+The file '/home1/msc30y20/Desktop/Module5/rtl/inter.vpd' was opened successfully.
+
+Warning-[VPD-WARN-VCD-OFF] Warning from $vcdplusoff.
+At time 940000, in PLI routine called from ./MatrixMultiplier_tb.v, 80
+  Stopping the recording of signal value changes for specified scopes or 
+  specified signals may cause unpredictable values on other dumped signals. 
+  Turn off dumping on the whole design to guarantee that the values changes 
+  being dumped are correct.
+
+$finish called from file "./MatrixMultiplier_tb.v", line 81.
+$finish at simulation time               940000
+Simulation complete, time is 940000 ps.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 940000 ps
+CPU Time:      0.080 seconds;       Data structure size:   0.1Mb
+Wed Oct  7 12:12:05 2020

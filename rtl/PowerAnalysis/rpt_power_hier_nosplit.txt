@@ -1,0 +1,43 @@
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : MatrixMultiplier
+Version: J-2014.09-SP2
+Date   : Wed Oct  7 12:21:51 2020
+****************************************
+
+
+Library(s) Used:
+
+    c35_CORELIB_WC (File: /net/vlsiserver/usr1/library/AMS/AMS_4.1_CDS/synopsys/c35_3.3V/c35_CORELIB_WC.db)
+
+
+Operating Conditions: WORST-MIL   Library: c35_CORELIB_WC
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+MatrixMultiplier       10k               c35_CORELIB_WC
+MatrixMultiplier_DW_mult_tc_0 10k        c35_CORELIB_WC
+MatrixMultiplier_DW01_add_0 10k          c35_CORELIB_WC
+
+
+Global Operating Voltage = 3    
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+MatrixMultiplier                          0.104    0.210 8.08e+05    0.315 100.0
+  add_53 (MatrixMultiplier_DW01_add_0) 5.11e-03 9.55e-03 6.81e+04 1.47e-02   4.7
+  mult_38 (MatrixMultiplier_DW_mult_tc_0) 1.66e-02 1.53e-02 2.57e+05 3.21e-02  10.2
+1

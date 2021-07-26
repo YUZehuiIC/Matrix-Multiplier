@@ -1,0 +1,542 @@
+ 
+****************************************
+check_design summary:
+Version:     J-2014.09-SP2
+Date:        Wed Oct  7 12:06:55 2020
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      2
+    Unconnected ports (LINT-28)                                     2
+
+Cells                                                               1
+    Nets connected to multiple pins on same cell (LINT-33)          1
+--------------------------------------------------------------------------------
+
+Warning: In design 'MatrixMultiplier_DW01_add_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'MatrixMultiplier_DW01_add_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'MatrixMultiplier', the same net is connected to more than one pin on submodule 'add_53'. (LINT-33)
+   Net 'P_temp_16' is connected to pins 'A[16]', 'A[15]''.
+1
+ 
+****************************************
+Report : area
+Design : MatrixMultiplier
+Version: J-2014.09-SP2
+Date   : Wed Oct  7 12:06:55 2020
+****************************************
+
+Library(s) Used:
+
+    c35_CORELIB_WC (File: /net/vlsiserver/usr1/library/AMS/AMS_4.1_CDS/synopsys/c35_3.3V/c35_CORELIB_WC.db)
+
+Number of ports:                           37
+Number of nets:                           245
+Number of cells:                          177
+Number of combinational cells:            120
+Number of sequential cells:                55
+Number of macros/black boxes:               0
+Number of buf/inv:                         61
+Number of references:                      22
+
+Combinational area:              28937.999977
+Buf/Inv area:                     4186.000038
+Noncombinational area:           17744.999542
+Macro/Black Box area:                0.000000
+Net Interconnect area:            7641.000000
+
+Total cell area:                 46682.999519
+Total area:                      54323.999519
+1
+ 
+****************************************
+Report : design
+Design : MatrixMultiplier
+Version: J-2014.09-SP2
+Date   : Wed Oct  7 12:06:55 2020
+****************************************
+
+Design allows ideal nets on clock nets.
+
+Library(s) Used:
+
+    c35_CORELIB_WC (File: /net/vlsiserver/usr1/library/AMS/AMS_4.1_CDS/synopsys/c35_3.3V/c35_CORELIB_WC.db)
+
+Local Link Library:
+
+    {c35_CORELIB_WC.db, c35_IOLIB_WC.db, c35_IOLIBV5_WC.db}
+
+Flip-Flop Types:
+
+    No flip-flop types specified.
+
+Latch Types:
+
+    No latch types specified.
+
+Operating Conditions:
+
+
+    Operating Condition Name : WORST-MIL
+    Library : c35_CORELIB_WC
+    Process :   1.40
+    Temperature : 150.00
+    Voltage :   3.00
+    Interconnect Model : balanced_tree
+
+Wire Loading Model:
+
+    Selected manually by the user.
+
+Name           :   10k
+Location       :   c35_CORELIB_WC
+Resistance     :   0.0014
+Capacitance    :   0.001633
+Area           :   1.8
+Slope          :   5
+Fanout   Length   Points Average Cap Std Deviation
+--------------------------------------------------------------
+     1     5.00
+
+
+
+Wire Loading Model Mode: enclosed.
+
+Timing Ranges:
+
+    No timing ranges specified.
+
+Pin Input Delays:
+
+    None specified.
+
+Pin Output Delays:
+
+    None specified.
+
+Disabled Timing Arcs:
+
+    No arcs disabled.
+
+Required Licenses:
+
+    None Required
+
+Design Parameters:
+
+    None specified.
+1
+ 
+****************************************
+Report : constraint
+        -all_violators
+        -verbose
+Design : MatrixMultiplier
+Version: J-2014.09-SP2
+Date   : Wed Oct  7 12:06:55 2020
+****************************************
+
+
+    Design: MatrixMultiplier
+
+    max_area               0.00
+  - Current Area       54324.00
+  ------------------------------
+    Slack              -54324.00  (VIOLATED)
+
+
+1
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : MatrixMultiplier
+Version: J-2014.09-SP2
+Date   : Wed Oct  7 12:06:55 2020
+****************************************
+
+Operating Conditions: WORST-MIL   Library: c35_CORELIB_WC
+Wire Load Model Mode: enclosed
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+Addsum_reg[16]/D (DFEC1)           24.52 f           97.14        72.63
+Addsum_reg[15]/D (DFEC1)           24.38 f           97.14        72.76
+Addsum_reg[14]/D (DFEC1)           23.45 f           97.14        73.69
+Addsum_reg[13]/D (DFEC1)           22.52 f           97.14        74.62
+Addsum_reg[12]/D (DFEC1)           21.60 f           97.14        75.55
+Addsum_reg[11]/D (DFEC1)           20.67 f           97.14        76.48
+Addsum_reg[10]/D (DFEC1)           19.74 f           97.14        77.40
+Addsum_reg[9]/D (DFEC1)            18.81 f           97.14        78.33
+Addsum_reg[8]/D (DFEC1)            17.88 f           97.14        79.26
+Addsum_reg[7]/D (DFEC1)            16.96 f           97.14        80.19
+Addsum_reg[6]/D (DFEC1)            16.03 f           97.14        81.11
+Addsum_reg[5]/D (DFEC1)            15.10 f           97.14        82.04
+Addsum_reg[4]/D (DFEC1)            14.19 f           97.14        82.95
+Addsum_reg[3]/D (DFEC1)            13.34 f           97.14        83.81
+Addsum_reg[2]/D (DFEC1)            12.22 f           97.14        84.92
+Addsum_reg[1]/D (DFEC1)            10.74 f           97.14        86.40
+Add2_reg[16]/D (DFC3)              10.78 f           97.50        86.72
+Add2_reg[0]/D (DFC3)               10.78 f           97.50        86.72
+Add2_reg[15]/D (DFC3)              10.63 f           97.50        86.87
+Add2_reg[14]/D (DFC3)              10.63 f           97.50        86.87
+Add2_reg[13]/D (DFC3)              10.63 f           97.50        86.87
+Add2_reg[12]/D (DFC3)              10.63 f           97.50        86.87
+Add2_reg[11]/D (DFC3)              10.63 f           97.50        86.87
+Add2_reg[10]/D (DFC3)              10.63 f           97.50        86.87
+Add2_reg[9]/D (DFC3)               10.63 f           97.50        86.87
+Add2_reg[8]/D (DFC3)               10.63 f           97.50        86.87
+Add2_reg[7]/D (DFC3)               10.63 f           97.50        86.87
+Add2_reg[6]/D (DFC3)               10.63 f           97.50        86.87
+Add2_reg[5]/D (DFC3)               10.63 f           97.50        86.87
+Add2_reg[4]/D (DFC3)               10.63 f           97.50        86.87
+Add2_reg[3]/D (DFC3)               10.63 f           97.50        86.87
+Add2_reg[2]/D (DFC3)               10.63 f           97.50        86.87
+Add2_reg[1]/D (DFC3)               10.63 f           97.50        86.87
+OUT_reg[13]/D (DFC3)                9.07 f           97.50        88.43
+OUT_reg[4]/D (DFC3)                 9.07 f           97.50        88.43
+OUT_reg[3]/D (DFC3)                 9.07 f           97.50        88.43
+OUT_reg[2]/D (DFC3)                 9.07 f           97.50        88.43
+OUT_reg[1]/D (DFC3)                 9.07 f           97.50        88.43
+OUT_reg[0]/D (DFC3)                 9.07 f           97.50        88.43
+Addsum_reg[0]/D (DFEC1)             7.77 f           97.14        89.37
+OUT_reg[16]/D (DFC3)                7.44 f           97.50        90.06
+OUT_reg[15]/D (DFC3)                7.44 f           97.50        90.06
+OUT_reg[14]/D (DFC3)                7.44 f           97.50        90.06
+OUT_reg[12]/D (DFC3)                7.44 f           97.50        90.06
+OUT_reg[11]/D (DFC3)                7.44 f           97.50        90.06
+OUT_reg[10]/D (DFC3)                7.44 f           97.50        90.06
+OUT_reg[9]/D (DFC3)                 7.44 f           97.50        90.06
+OUT_reg[8]/D (DFC3)                 7.44 f           97.50        90.06
+OUT_reg[7]/D (DFC3)                 7.44 f           97.50        90.06
+OUT_reg[6]/D (DFC3)                 7.44 f           97.50        90.06
+OUT_reg[5]/D (DFC3)                 7.44 f           97.50        90.06
+OUT_STROBE (out)                    2.11 f           92.50        90.39
+OUT[16] (out)                       1.73 f           92.50        90.77
+OUT[15] (out)                       1.73 f           92.50        90.77
+OUT[14] (out)                       1.73 f           92.50        90.77
+OUT[13] (out)                       1.73 f           92.50        90.77
+OUT[12] (out)                       1.73 f           92.50        90.77
+OUT[11] (out)                       1.73 f           92.50        90.77
+OUT[10] (out)                       1.73 f           92.50        90.77
+OUT[9] (out)                        1.73 f           92.50        90.77
+OUT[8] (out)                        1.73 f           92.50        90.77
+OUT[7] (out)                        1.73 f           92.50        90.77
+OUT[6] (out)                        1.73 f           92.50        90.77
+OUT[5] (out)                        1.73 f           92.50        90.77
+OUT[4] (out)                        1.73 f           92.50        90.77
+OUT[3] (out)                        1.73 f           92.50        90.77
+OUT[2] (out)                        1.73 f           92.50        90.77
+OUT[1] (out)                        1.73 f           92.50        90.77
+OUT[0] (out)                        1.73 f           92.50        90.77
+state_reg[0]/D (DFC3)               6.45 f           97.50        91.05
+OUT_STROBE_reg/E (DFEC1)            4.83 r           97.01        92.17
+Flag_reg/T (TFEP3)                  4.83 r           97.19        92.35
+Addsum_reg[16]/E (DFEC1)            3.37 f           96.79        93.42
+Addsum_reg[15]/E (DFEC1)            3.37 f           96.79        93.42
+Addsum_reg[14]/E (DFEC1)            3.37 f           96.79        93.42
+Addsum_reg[13]/E (DFEC1)            3.37 f           96.79        93.42
+Addsum_reg[12]/E (DFEC1)            3.37 f           96.79        93.42
+Addsum_reg[11]/E (DFEC1)            3.37 f           96.79        93.42
+Addsum_reg[10]/E (DFEC1)            3.37 f           96.79        93.42
+Addsum_reg[9]/E (DFEC1)             3.37 f           96.79        93.42
+Addsum_reg[8]/E (DFEC1)             3.37 f           96.79        93.42
+Addsum_reg[7]/E (DFEC1)             3.37 f           96.79        93.42
+Addsum_reg[6]/E (DFEC1)             3.37 f           96.79        93.42
+Addsum_reg[5]/E (DFEC1)             3.37 f           96.79        93.42
+Addsum_reg[4]/E (DFEC1)             3.37 f           96.79        93.42
+Addsum_reg[3]/E (DFEC1)             3.37 f           96.79        93.42
+Addsum_reg[2]/E (DFEC1)             3.37 f           96.79        93.42
+Addsum_reg[1]/E (DFEC1)             3.37 f           96.79        93.42
+Addsum_reg[0]/E (DFEC1)             3.37 f           96.79        93.42
+OUT_STROBE_reg/D (DFEC1)            2.76 f           97.14        94.38
+state_reg[1]/T (TFEC3)              2.26 r           97.01        94.75
+
+1
+ 
+****************************************
+Report : clock_gating
+Design : MatrixMultiplier
+Version: J-2014.09-SP2
+Date   : Wed Oct  7 12:06:55 2020
+****************************************
+
+
+
+                             Clock Gating Summary
+          ------------------------------------------------------------
+          |    Number of Clock gating elements    |        0         |
+          |                                       |                  |
+          |    Number of Gated registers          |     0 (0.00%)    |
+          |                                       |                  |
+          |    Number of Ungated registers        |    55 (100.00%)  |
+          |                                       |                  |
+          |    Total number of registers          |       55         |
+          ------------------------------------------------------------
+
+
+
+1
+Loading db file '/net/vlsiserver/usr1/library/AMS/AMS_4.1_CDS/synopsys/c35_3.3V/c35_CORELIB_WC.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : MatrixMultiplier
+Version: J-2014.09-SP2
+Date   : Wed Oct  7 12:06:55 2020
+****************************************
+
+
+Library(s) Used:
+
+    c35_CORELIB_WC (File: /net/vlsiserver/usr1/library/AMS/AMS_4.1_CDS/synopsys/c35_3.3V/c35_CORELIB_WC.db)
+
+
+Operating Conditions: WORST-MIL   Library: c35_CORELIB_WC
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+MatrixMultiplier       10k               c35_CORELIB_WC
+MatrixMultiplier_DW01_add_0
+                       10k               c35_CORELIB_WC
+MatrixMultiplier_DW_mult_tc_0
+                       10k               c35_CORELIB_WC
+
+
+Global Operating Voltage = 3    
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  = 258.4837 uW   (66%)
+  Net Switching Power  = 130.8528 uW   (34%)
+                         ---------
+Total Dynamic Power    = 389.3364 uW  (100%)
+
+Cell Leakage Power     = 807.8687 nW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.1606        1.2810e-02        3.5329e+05            0.1738  (  44.54%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  9.7891e-02            0.1180        4.5458e+05            0.2164  (  55.46%)
+--------------------------------------------------------------------------------------------------
+Total              0.2585 mW         0.1309 mW     8.0787e+05 pW         0.3901 mW
+1
+ 
+****************************************
+Report : qor
+Design : MatrixMultiplier
+Version: J-2014.09-SP2
+Date   : Wed Oct  7 12:06:55 2020
+****************************************
+
+
+  Timing Path Group 'CLK'
+  -----------------------------------
+  Levels of Logic:              21.00
+  Critical Path Length:         19.52
+  Critical Path Slack:          72.63
+  Critical Path Clk Period:    100.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          2
+  Hierarchical Port Count:         85
+  Leaf Cell Count:                345
+  Buf/Inv Cell Count:              96
+  Buf Cell Count:                  36
+  Inv Cell Count:                  60
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:       290
+  Sequential Cell Count:           55
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:    28937.999977
+  Noncombinational Area: 17744.999542
+  Buf/Inv Area:           4186.000038
+  Total Buffer Area:          1965.60
+  Total Inverter Area:        2220.40
+  Macro/Black Box Area:      0.000000
+  Net Area:               7641.000000
+  -----------------------------------
+  Cell Area:             46682.999519
+  Design Area:           54323.999519
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:           428
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: vlsilinux07
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.24
+  Logic Optimization:                  0.18
+  Mapping Optimization:                1.39
+  -----------------------------------------
+  Overall Compile Time:                2.71
+  Overall Compile Wall Clock Time:     3.85
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1
+ 
+****************************************
+Report : hierarchy
+Design : MatrixMultiplier
+Version: J-2014.09-SP2
+Date   : Wed Oct  7 12:06:55 2020
+****************************************
+
+Attributes:
+    r - licensed design
+
+MatrixMultiplier
+    AOI210                                c35_CORELIB_WC
+    BUF2                                  c35_CORELIB_WC
+    CLKIN0                                c35_CORELIB_WC
+    DFC3                                  c35_CORELIB_WC
+    DFEC1                                 c35_CORELIB_WC
+    INV0                                  c35_CORELIB_WC
+    INV3                                  c35_CORELIB_WC
+    INV8                                  c35_CORELIB_WC
+    LOGIC0                                c35_CORELIB_WC
+    MatrixMultiplier_DW01_add_0
+        ADD31                             c35_CORELIB_WC
+        BUF2                              c35_CORELIB_WC
+        INV3                              c35_CORELIB_WC
+        NOR21                             c35_CORELIB_WC
+        XOR20                             c35_CORELIB_WC
+        XOR30                             c35_CORELIB_WC
+    MatrixMultiplier_DW_mult_tc_0                   r
+        ADD22                             c35_CORELIB_WC
+        ADD32                             c35_CORELIB_WC
+        INV1                              c35_CORELIB_WC
+        INV3                              c35_CORELIB_WC
+        NAND22                            c35_CORELIB_WC
+        NAND30                            c35_CORELIB_WC
+        NOR20                             c35_CORELIB_WC
+        OAI210                            c35_CORELIB_WC
+        OAI220                            c35_CORELIB_WC
+        XNR20                             c35_CORELIB_WC
+    NAND20                                c35_CORELIB_WC
+    NAND22                                c35_CORELIB_WC
+    NAND23                                c35_CORELIB_WC
+    NAND24                                c35_CORELIB_WC
+    NOR21                                 c35_CORELIB_WC
+    NOR22                                 c35_CORELIB_WC
+    OAI212                                c35_CORELIB_WC
+    OAI221                                c35_CORELIB_WC
+    OAI222                                c35_CORELIB_WC
+    TFEC3                                 c35_CORELIB_WC
+    TFEP3                                 c35_CORELIB_WC
+1
+ 
+****************************************
+Report : reference
+Design : MatrixMultiplier
+Version: J-2014.09-SP2
+Date   : Wed Oct  7 12:06:55 2020
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AOI210             c35_CORELIB_WC
+                                 72.800003       1     72.800003  
+BUF2               c35_CORELIB_WC
+                                 54.599998      21   1146.599968  
+CLKIN0             c35_CORELIB_WC
+                                 36.400002      19    691.600029  
+DFC3               c35_CORELIB_WC
+                                309.399994      35  10828.999786  n
+DFEC1              c35_CORELIB_WC
+                                345.799988      18   6224.399780  n
+INV0               c35_CORELIB_WC
+                                 36.400002      15    546.000023  
+INV3               c35_CORELIB_WC
+                                 36.400002       5    182.000008  
+INV8               c35_CORELIB_WC
+                                 72.800003       1     72.800003  
+LOGIC0             c35_CORELIB_WC
+                                 36.400002       1     36.400002  
+MatrixMultiplier_DW01_add_0    5368.999977       1   5368.999977  h
+MatrixMultiplier_DW_mult_tc_0 16671.199944       1  16671.199944  h
+NAND20             c35_CORELIB_WC
+                                 54.599998      17    928.199974  
+NAND22             c35_CORELIB_WC
+                                 54.599998       2    109.199997  
+NAND23             c35_CORELIB_WC
+                                 91.000000       1     91.000000  
+NAND24             c35_CORELIB_WC
+                                109.199997       1    109.199997  
+NOR21              c35_CORELIB_WC
+                                 54.599998       1     54.599998  
+NOR22              c35_CORELIB_WC
+                                 72.800003       1     72.800003  
+OAI212             c35_CORELIB_WC
+                                 72.800003      17   1237.600052  
+OAI221             c35_CORELIB_WC
+                                 91.000000       2    182.000000  
+OAI222             c35_CORELIB_WC
+                                 91.000000      15   1365.000000  
+TFEC3              c35_CORELIB_WC
+                                345.799988       1    345.799988  n
+TFEP3              c35_CORELIB_WC
+                                345.799988       1    345.799988  n
+-----------------------------------------------------------------------------
+Total 22 references                                 46682.999519
+1
